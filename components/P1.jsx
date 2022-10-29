@@ -33,19 +33,19 @@ const P1 = () => {
           <div className=" absolute inset-0 w-full h-full overflow-hidden">
             {" "}
             <img
-              className="absolute top-52 left-[600px] md:left-[400px] md:w-[300px] md:top-72"
+              className="absolute top-52 left-[600px] sm: left-[500px] sm:w-40 sm: h-80 "
               src="/img/interface.png"
               alt=""
             />
           </div>
-          <div className="absolute inset-0 w-full h-full">
+          {/* <div className="absolute inset-0 w-full h-full">
             {" "}
             <img
-              className="absolute -top-[117px] left-[900px] md:left-[600px]  bottom-0 overflow-hidden h-[1080px] md:-top-[100px] md:w-[400px] h-[900px] "
+              className="absolute -top-[117px] left-[900px]   bottom-0 overflow-hidden h-[1080px]  "
               src="/img/phone.png"
               alt=""
             />
-          </div>
+          </div> */}
         </div>
       </section>
 
@@ -53,7 +53,7 @@ const P1 = () => {
         <div className="relative bg-[#F4F8FB]">
           <div className=" pt-32 pb-64  container">
             <div className="flex">
-              <div className="p-20">
+              <div className="p-20 sm: p-5">
                 <p className=" font-openl text-black text-[38px]">
                   Design & Features
                 </p>
@@ -71,7 +71,7 @@ const P1 = () => {
                   See More
                 </button>
               </div>
-              <div className="p-20">
+              <div className="p-5">
                 <p className=" font-openl text-black text-[38px]">
                   Design & Features
                 </p>
@@ -89,7 +89,7 @@ const P1 = () => {
                   See More
                 </button>
               </div>
-              <div className="p-20">
+              <div className="p-5">
                 <p className=" font-openl text-black text-[38px]">
                   Design & Features
                 </p>
@@ -134,8 +134,8 @@ const P1 = () => {
       </section>
       <section>
         <div className="bg-[#2B303B] h-[692px]">
-          <div className=" pt-32 pl-20 container">
-            <div className=" grid grid-cols-4 gap-8">
+          <div className=" pt-32  container">
+            <div className=" grid grid-cols-4 gap-7">
               <div className="">
                 <svg
                   className="w-[42.77px] h-[42.77px] "
@@ -252,7 +252,7 @@ const P1 = () => {
           </div>
         </div>
       </section>
-      <section>
+      {/* <section>
         <div className="grid-cols-2 grid">
           <div className="bg-[#E9EEF1] w-full h-[697px] ">
             <div className="container pl-[140px] pt-[178.6px] inline-flex align-baseline">
@@ -443,7 +443,7 @@ const P1 = () => {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
     </div>
   );
 };
