@@ -245,7 +245,7 @@ const P1 = () => {
                   Sustainable
                   <br></br> keytar Tumblr, authentic<br></br>mustache locavore
                   scenester<br></br> gentrify meh banjo fanny pack<br></br>{" "}
-                  health oth. Four dollar toas
+                  health woth. Four dollar toas
                 </p>
               </div>
             </div>
