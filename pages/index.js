@@ -1,21 +1,76 @@
 import Head from "next/head";
 import Image from "next/image";
-import P1 from "../components/P1";
-import P2 from "../components/P2";
-import P3 from "../components/P3";
-import P4 from "../components/P4";
-import P5 from "../components/P5";
-import P6 from "../components/P6";
-
-import P7 from "../components/P7";
-import P8 from "../components/P8";
-import P9 from "../components/P9";
-import P10 from "../components/P10";
+import React from "react";
 
 export default function Home() {
   return (
     <div>
-      <P1 />
+      {/* Remove this*/}
+
+      {/* the header can be of min hieght screen and have a backgroung image of the hero image */}
+      <header className="min-h-screen   bg-[url('/img/p1.jpg')] ">
+        {/* the logo can go here in div. it can be aligned left with layout any position method */}
+
+        <div>
+          <img className="w-[61px] h-[77px]" src="img/logo.svg" alt="" />
+        </div>
+      </header>
+
+      <section className=" bg-[#835FA8]">
+        {/* you can use a grid to sperate the two sections */}
+        <div className="grid-cols-2">
+          <div className="pt-10 pl-16">
+            {/* 1st COL the Heor feature text and the button can go here */}
+            <p className=" font-openl text-white text-xl ">
+              Super Duper & such
+            </p>
+
+            <p className="  font-openl text-white text-sm   ">
+              Lorem ipsum dolor sit amet, consectetur adipisicing<br></br> elit,
+              sed do eiusmod tempor incididunt ut labore et<br></br> dolore
+              magna. aliqua
+            </p>
+
+            <div className="">
+              <button className="px-8 py-3 rounded-full bg-[#3DD2AE] mt-11 text-sm text-white  ">
+                See More
+              </button>
+            </div>
+          </div>
+          <div>
+            {/*2nd COL the image can go here and you can you position absolute to position them. its easier if you export the two phone images togeter */}
+          </div>
+        </div>
+      </section>
+
+      {/* Feature section */}
+      <section>
+        {/* use a grid to make 3 columns and make a CARD COMPONENT here since the html elements are being repeated. you can loop the array i have created at the bottom of the file*/}
+      </section>
     </div>
   );
 }
+
+const FEATER_CARD = [
+  {
+    title: "Design & Features",
+    exerp: "Flannel ennui narwhal, craft beer twee Vice plaid authentic synth.",
+    description:
+      "Kickstarter umami Intelligentsia kogi. Try-hard flannel literally, chambray blog crucifix put a bird on it four dollar toast cardigan scenester aesthetic sartorial chia messenger bag Pinterest.",
+    href: "#",
+  },
+  {
+    title: "Pocket Power",
+    exerp: "Flannel ennui narwhal, craft beer twee Vice plaid authentic synth.",
+    description:
+      "Kickstarter umami Intelligentsia kogi. Try-hard flannel literally, chambray blog crucifix put a bird on it four dollar toast cardigan scenester aesthetic sartorial chia messenger bag Pinterest.",
+    href: "#",
+  },
+  {
+    title: "Inspired by the world",
+    exerp: "Flannel ennui narwhal, craft beer twee Vice plaid authentic synth.",
+    description:
+      "Kickstarter umami Intelligentsia kogi. Try-hard flannel literally, chambray blog crucifix put a bird on it four dollar toast cardigan scenester aesthetic sartorial chia messenger bag Pinterest.Kickstarter umami Intelligentsia kogi. Try-hard flannel literally, chambray blog.",
+    href: "#",
+  },
+];
