@@ -252,11 +252,11 @@ const P1 = () => {
           </div>
         </div>
       </section>
-      {/* <section>
+      <section>
         <div className="grid-cols-2 grid">
-          <div className="bg-[#E9EEF1] w-full h-[697px] ">
-            <div className="container pl-[140px] pt-[178.6px] inline-flex align-baseline">
-              <div className="w-[70px] h-[90px]">
+          <div className="bg-[#E9EEF1] w-full h-[697px] sm:h-[650px] ">
+            <div className="container pl-[140px] sm:pl-[11px] pt-[178.6px] inline-flex ">
+              <div className="w-[40px] h-[90px] sm:w-[80px]">
                 <svg
                   className="w-[56px] h-[77px]"
                   xmlns="http://www.w3.org/2000/svg"
@@ -273,17 +273,19 @@ const P1 = () => {
                   />
                 </svg>
               </div>
-              <p className="font-openl text-5xl pt-4 pl-4  ">Connectivity</p>
+              <p className="font-openl text-5xl sm:text-4xl pt-4 pl-4 sm:pl-0  ">
+                Connectivity
+              </p>
             </div>
 
-            <div className="w-[480px] mx-auto pt-9 ">
-              <span className="text-xl leading-relaxed">
+            <div className="w-[480px] mx-auto pt-9 sm: w-[300px]">
+              <span className="text-xl leading-relaxed sm:text-base">
                 Flannel ennui narwhal, craft beer twee Vice plaid authentic
                 synth Intelligentsia stumptown gluten-free drinking vinegar
                 Schlitz mixtape.
               </span>
             </div>
-            <div className="w-[480px] mx-auto pt-9 ">
+            <div className="w-[480px] mx-auto pt-9 sm: w-[300px] ">
               <p className="text-sm leading-loose">
                 Kickstarter umami Intelligentsia kogi. Try-hard flannel
                 literally, chambray blog crucifix put a bird on it four dollar
@@ -298,7 +300,7 @@ const P1 = () => {
           </div>
         </div>
       </section>
-      <section>
+      {/* <section>
         <div className="flex h-[650px]">
           <div className="w-[250px]  inline-block ">
             <Side />
