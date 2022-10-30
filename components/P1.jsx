@@ -33,7 +33,7 @@ const P1 = () => {
           <div className=" absolute inset-0 w-full h-full overflow-hidden">
             {" "}
             <img
-              className="absolute top-52 left-[600px] sm: left-[500px] sm:w-40 sm: h-80 "
+              className="absolute top-52 left-[600px] sm:left-[500px] sm:w-40 sm:h-80 "
               src="/img/interface.png"
               alt=""
             />
@@ -53,7 +53,7 @@ const P1 = () => {
         <div className="relative bg-[#F4F8FB]">
           <div className=" pt-32 pb-64  container">
             <div className="flex">
-              <div className="p-20 sm: p-5">
+              <div className="p-20 sm:p-5">
                 <p className=" font-openl text-black text-[38px]">
                   Design & Features
                 </p>
@@ -278,14 +278,14 @@ const P1 = () => {
               </p>
             </div>
 
-            <div className="w-[480px] mx-auto pt-9 sm: w-[300px]">
+            <div className="w-[480px] mx-auto pt-9 sm:w-[300px]">
               <span className="text-xl leading-relaxed sm:text-base">
                 Flannel ennui narwhal, craft beer twee Vice plaid authentic
                 synth Intelligentsia stumptown gluten-free drinking vinegar
                 Schlitz mixtape.
               </span>
             </div>
-            <div className="w-[480px] mx-auto pt-9 sm: w-[300px] ">
+            <div className="w-[480px] mx-auto pt-9 sm:w-[300px] ">
               <p className="text-sm leading-loose">
                 Kickstarter umami Intelligentsia kogi. Try-hard flannel
                 literally, chambray blog crucifix put a bird on it four dollar
