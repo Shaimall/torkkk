@@ -7,7 +7,7 @@ export default function Home() {
       {/* Remove this*/}
 
       {/* the header can be of min hieght screen and have a backgroung image of the hero image */}
-      <header className="min-h-screen bg-no-repeat md:bg-cover bg-center  bg-[url('/img/p1.jpg')] ">
+      <header className="min-h-screen bg-no-repeat bg-cover bg-center  bg-[url('/img/p1.jpg')] ">
         {/* the logo can go here in div. it can be aligned left with layout any position method */}
 
         <div className="absolute left-10 flex flex-shrink mt-9">
@@ -40,7 +40,7 @@ export default function Home() {
             {/*2nd COL the image can go here and you can you position absolute to position them. its easier if you export the two phone images togeter */}
 
             <img
-              className="md:absolute bottom-0 right-0 md:h-[110%] md:max-w-none   "
+              className="md:absolute bottom-0 right-0 md:h-[110%] md:max-w-md   "
               src="img/phones2.png"
               alt=""
             />
@@ -52,7 +52,7 @@ export default function Home() {
 
       <section className=" bg-[#F4F8FB] ">
         {/* use a grid to make 3 columns and make a CARD COMPONENT here since the html elements are being repeated. you can loop the array i have created at the bottom of the file*/}
-        <div className="container px-20 py-14  grid grid-cols-1  md:grid-cols-3 md:gap-14 ">
+        <div className="container px-16 py-4 md:px-1 md:py-14 lg:px-16 grid grid-cols-1  md:grid-cols-3 md:gap-10 ">
           {FEATER_CARD.map((item, i) => (
             <Card {...item} key={i} />
           ))}
