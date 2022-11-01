@@ -31,7 +31,7 @@ export default function Home() {
             </p>
 
             <div className="h-12 sm:pt-1 text-center md:text-left ">
-              <button className="px-6 sm:px-7 py-3 sm:py-3 rounded-full bg-[#3DD2AE] text-xs sm:text-l text-white   ">
+              <button className="px-6 sm:px-7 py-3 sm:py-3 mt-3 rounded-full bg-[#3DD2AE] text-xs sm:text-l text-white   ">
                 See More
               </button>
             </div>
@@ -40,7 +40,7 @@ export default function Home() {
             {/*2nd COL the image can go here and you can you position absolute to position them. its easier if you export the two phone images togeter */}
 
             <img
-              className="md:absolute bottom-0 right-0 md:h-[110%] md:max-w-md   "
+              className="md:absolute bottom-0 right-0 md:h-[110%] md:max-w-none    "
               src="img/phones2.png"
               alt=""
             />
@@ -52,17 +52,23 @@ export default function Home() {
 
       <section className=" bg-[#F4F8FB] ">
         {/* use a grid to make 3 columns and make a CARD COMPONENT here since the html elements are being repeated. you can loop the array i have created at the bottom of the file*/}
-        <div className="container px-16 py-4 md:px-1 md:py-14 lg:px-16 grid grid-cols-1  md:grid-cols-3 md:gap-10 ">
-          {FEATER_CARD.map((item, i) => (
+        <div className="container px-16 py-4 md:px-1  lg:px-16 grid grid-cols-1  md:grid-cols-3  md:gap-10 ">
+          {CARD.map((item, i) => (
             <Card {...item} key={i} />
           ))}
         </div>
+      </section>
+      {/* working on this */}
+      <section className="bg-[#2B303B]">
+        {CARD2.map((item, i) => (
+          <Card {...item} key={i} />
+        ))}
       </section>
     </div>
   );
 }
 
-const FEATER_CARD = [
+const CARD = [
   {
     title: "Design & Features",
     exerp: "Flannel ennui narwhal, craft beer twee Vice plaid authentic synth.",
@@ -81,7 +87,38 @@ const FEATER_CARD = [
     title: "Inspired by the world",
     exerp: "Flannel ennui narwhal, craft beer twee Vice plaid authentic synth.",
     description:
-      "Kickstarter umami Intelligentsia kogi. Try-hard flannel literally, chambray blog crucifix put a bird on it four dollar toast cardigan scenester aesthetic sartorial chia messenger bag Pinterest.Kickstarter umami Intelligentsia kogi. Try-hard flannel literally, chambray blog.",
+      "Kickstarter umami Intelligentsia kogi. Try-hard flannel literally, chambray blog crucifix put a bird on it four dollar toast cardigan scenester aesthetic sartorial chia messenger bag Pinterest.Kickstarter umami Intelligentsia kogi. Try-hard flannel literally, chambray blog.Kickstarter umami Intelligentsia kogi. Try-hard flannel literally, chambray blog",
+    href: "#",
+  },
+];
+
+const CARD2 = [
+  {
+    title: "Design",
+
+    description:
+      "Scenester PBR deep v jean shorts typewriter. Sustainable keytar Tumblr, authentic mustache locavore scenester gentrify meh banjo fanny pack health goth. Four dollar toast",
+    href: "#",
+  },
+  {
+    title: "Refinement",
+
+    description:
+      "Pickled 8-bit tousled health goth farm-to-table Pitchfork, lumbersexual church-key photo booth Blue Bottle. Aesthetic viral American Apparel, scenester distillery",
+    href: "#",
+  },
+  {
+    title: "Dive In",
+
+    description:
+      "Cliche Intelligentsia church-key, gluten-free drinking vinegar keffiyeh cornhole next level shabby chic plaid tattooed. Helvetica post-ironic raw denim tousled listicle.",
+    href: "#",
+  },
+  {
+    title: "Research",
+
+    description:
+      "Raw denim health goth artisan, kitsch literally shabby chic meh small batch Wes Anderson retro Neutra. Blog meggings semiotics, irony swag cred kale chips aesthetic",
     href: "#",
   },
 ];
