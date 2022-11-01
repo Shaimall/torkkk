@@ -58,12 +58,48 @@ export default function Home() {
           ))}
         </div>
       </section>
+      <section className=" bg-cover bg-center bg-[url('/img/p4.png')]">
+        <div className="container px-8">
+          <p className="  text-white font-openl text-[48px] text-center pt-28">
+            {" "}
+            Designed for humans
+          </p>
+          <p className="font-openl text-[#9DA5B0] text-[20px] pt-8 text-center">
+            Kickstarter umami Intelligentsia kogi. Try-hard flannel literally,
+            chambray blog crucifix put a bird on it four dollar toast cardigan
+            scenester<br></br> aesthetic sartorial chia messenger bag Pinterest.
+            3 wolf moon Thundercats Banksy paleo, yr four loko Shoreditch
+            dreamcatcher.
+          </p>
+        </div>
+        <div className="container px-16 sm:px-24 md:px-28 lg:px-32 mt-10">
+          <div className="bg-[#2B303B] h-8 rounded-t-lg ">
+            <div className="flex flex-row space-x-2 px-4 py-2 ">
+              <div className="bg-[#434955] h-3 w-3 rounded-full"></div>
+              <div className="bg-[#434955] h-3 w-3 rounded-full"></div>
+              <div className="bg-[#434955] h-3 w-3 rounded-full"></div>
+            </div>
+          </div>
+          <div className="relative">
+            <img
+              className="mx-auto w-full relative "
+              src="img/2.jpg"
+              align-bottom
+              alt=""
+            />
+
+            <p className="text-2xl text-white text-center absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 border-4 border-white px-5 py-5">
+              DESIGN WIN
+            </p>
+          </div>
+        </div>
+      </section>
       {/* working on this */}
-      <section className="bg-[#2B303B]">
+      {/* <section className="bg-[#2B303B]">
         {CARD2.map((item, i) => (
           <Card {...item} key={i} />
         ))}
-      </section>
+      </section> */}
     </div>
   );
 }
