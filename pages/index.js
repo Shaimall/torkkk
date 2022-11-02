@@ -1,5 +1,5 @@
 import React from "react";
-import { Card } from "../components/card";
+import { Card, Card2 } from "../components/card";
 
 export default function Home() {
   return (
@@ -88,17 +88,130 @@ export default function Home() {
               alt=""
             />
 
-            <p className="text-2xl text-white text-center absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 border-4 border-white px-5 py-5">
+            <p className="sm:text-2xl text-xs text-white text-center absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 sm:border-4 border-2 border-white sm:px-5 sm:py-5 px-2 ">
               DESIGN WIN
             </p>
           </div>
         </div>
       </section>
       {/* working on this */}
-      {/* <section className="bg-[#2B303B]">
-        {CARD2.map((item, i) => (
-          <Card {...item} key={i} />
-        ))}
+      <section className="bg-[#2B303B]">
+        <div className="container px-16 py-4 md:px-1  lg:px-8 grid grid-cols-1  md:grid-cols-4  md:gap-0 ">
+          {CARD2.map((item, i) => (
+            <Card2 {...item} key={i} />
+          ))}
+        </div>
+      </section>
+      <section className="grid md:grid-cols-12  bg-[#E9EEF1]">
+        <div className="col-span-6 container lg:px-20 lg:py-20 px-5 py-12 ">
+          <div className="inline-flex ">
+            <svg
+              className="md:w-[54px] md:h-[67px] w-14 h-8"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="#835FA8"
+              class="w-6 h-6"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M12 9.75v6.75m0 0l-3-3m3 3l3-3m-8.25 6a4.5 4.5 0 01-1.41-8.775 5.25 5.25 0 0110.233-2.33 3 3 0 013.758 3.848A3.752 3.752 0 0118 19.5H6.75z"
+              />
+            </svg>
+            <p className="font-openl text-4xl md:text-3xl lg:text-5xl lg:mt-3 md:mt-5 mt-1 ">
+              Connectivity
+            </p>
+          </div>
+          <p className="md:text-xl leading-relaxed ml-6 py-8">
+            Flannel ennui narwhal, craft beer twee Vice plaid authentic synth
+            Intelligentsia stumptown gluten-free drinking vinegar Schlitz
+            mixtape.
+          </p>
+          <p className="text-sm leading-loose ml-6">
+            Kickstarter umami Intelligentsia kogi. Try-hard flannel literally,
+            chambray blog crucifix put a bird on it four dollar toast cardigan
+            scenester aesthetic sartorial chia messenger bag Pinterest. 3 wolf
+            moon Thundercats Banksy paleo, yr four loko Shoreditch dreamcatcher.
+          </p>
+        </div>
+        <div className="col-span-6">
+          <img className="h-full " src="/img/3.jpg" alt="" />
+        </div>
+      </section>
+      <section className="grid md:grid-cols-12">
+        <div className="md:col-span-2 bg-[#F4F8FB]"></div>
+        <div className="col-span-4">
+          <img className="h-full" src="/img/4.jpg" alt="" />
+        </div>
+        <div className="col-span-6 bg-[#835FA8] ">
+          <div className="container px-10 py-14">
+            <p className="text-lg text-white  ">12th June 2015</p>
+            <p className="text-3xl text-white leading-relaxed ">
+              Lorem ipsum dolor sit amet, cotur adipisicing elit sed do eiusmod
+              tempor incididunt ut labore et dolore
+            </p>
+            <div className="flex ">
+              <div className="bg-white w-14 h-14 rounded-full"></div>
+              <p className="text-white text-sm pl-5 pt-4"> Blaz Robar</p>
+            </div>
+          </div>
+
+          <div className="mt-44">
+            <div className="w-40  bg-black ">
+              <p className="text-sm text-white container px-10 py-2 ">
+                Latest News{" "}
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section className="grid md:grid-cols-12">
+        <div className="col-span-2 bg-[#F4F8FB]"> </div>
+        <div className="col-span-4 bg-white">
+          <div className="container px-4 pt-16">
+            <p className="text-2xl  ">
+              Lorem ipsum dolor sit amet, cotur adipisicing elit
+            </p>
+            <p className="text-xs  leading-relaxed pt-5 text-[#83969F]">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea
+            </p>
+            <div className=" flex pt-20 ">
+              <p className=" p-7 text-base border-r-2 border-[#83969F] text-[#83969F] ">
+                92
+              </p>
+              <p className="pt-7 pl-2 text-[#83969F] "> Comments</p>
+            </div>
+          </div>
+        </div>
+        <div className="col-span-4">
+          <img className="h-full" src="/img/6.jpg" alt="" />
+        </div>
+        <div className="col-span-2 bg-[#F4F8FB]"> </div>
+      </section>
+      {/* <section>
+        <div className="relative">
+          <img className="w-full" src="/img/5.jpg" alt="" />
+
+          <div className=" absolute top-0 grid grid-cols-12 ">
+            <div className=" bg-[#835FA8] container lg:h-[90%] md:h-[50%] col-span-6 p-28 ">
+              <div className="w-auto">
+                <p className=" text-2xl text-white pt-7 leading-relaxed container">
+                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                  laboris. Nisi ut aliquip ex ea commodo
+                </p>
+              </div>
+              <div className="flex pt-5">
+                <div className="bg-white w-14 h-14 rounded-full"></div>
+                <p className="text-white text-sm pl-5 pt-4"> Blaz Robar</p>
+              </div>
+            </div>
+          </div>
+        </div>
       </section> */}
     </div>
   );
@@ -130,6 +243,8 @@ const CARD = [
 
 const CARD2 = [
   {
+    num: "01",
+
     title: "Design",
 
     description:
@@ -137,6 +252,8 @@ const CARD2 = [
     href: "#",
   },
   {
+    num: "02",
+
     title: "Refinement",
 
     description:
@@ -144,6 +261,8 @@ const CARD2 = [
     href: "#",
   },
   {
+    num: "03",
+
     title: "Dive In",
 
     description:
@@ -151,6 +270,8 @@ const CARD2 = [
     href: "#",
   },
   {
+    num: "04",
+
     title: "Research",
 
     description:

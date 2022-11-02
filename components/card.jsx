@@ -16,11 +16,16 @@ export const Card = ({ title, exerp, description }) => {
   );
 };
 // working on this, not done yet
-export const Card2 = ({ title, description }) => {
+export const Card2 = ({ title, description, num }) => {
   return (
-    <div className="md:flex flex-wrap  text-center md:text-left p-4 py-12 ">
-      <p className="text-3xl ">{title}</p>
-      <p className="text-base pt-4 mb-8 ">{description}</p>
+    <div className="md:flex text-center md:text-left p-4 py-12 ">
+      <div className="flex-row">
+        <div className="md:flex text-center">
+          <p className="text-2xl text-center">{num}</p>
+          <p className="text-2xl text-white ">{title}</p>
+        </div>
+        <p className="text-base pt-4 mb-8 text-white">{description}</p>
+      </div>
     </div>
   );
 };
