@@ -16,11 +16,12 @@ export const Card = ({ title, exerp, description }) => {
   );
 };
 // working on this, not done yet
-export const Card2 = ({ title, description, num }) => {
+export const Card2 = ({ title, description, num, icon }) => {
   return (
     <div className="md:flex text-center md:text-left p-4 py-12 ">
       <div className="flex-row">
         <div className="md:flex text-center">
+          {icon}
           <p className="text-2xl text-center">{num}</p>
           <p className="text-2xl text-white ">{title}</p>
         </div>
