@@ -1,5 +1,5 @@
 import React from "react";
-import { Card, Card2 } from "../components/card";
+import { Card, Card2, Card3 } from "../components/card";
 
 export default function Home() {
   return (
@@ -225,6 +225,56 @@ export default function Home() {
           </div>
         </div>
       </section>
+      <section className="bg-[#1A2124]">
+        <div className="grid md:grid-cols-12">
+          <div className="col-span-2 hidden md:block"></div>
+          <div className="col-span-4 container py-9 px-10 md:px-1">
+            <p className="text-sm text-white "> Get in touch</p>
+            <p className="text-sm text-white pt-8">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat.
+            </p>
+            <div className="grid md:grid-cols-3 hidden md:grid ">
+              {CARD3.map((item, i) => (
+                <Card3 {...item} key={i} />
+              ))}
+            </div>
+          </div>
+          <div className="col-span-1 hidden md:block"></div>
+          <div className="col-span-3 container py-9 px-10 md:px-1">
+            {" "}
+            <p className="text-sm text-white "> Stay in touch</p>
+            <form className="inline-flex pt-4" action="" method="post">
+              <input type="text" />
+              <button className="bg-[#835FA8] container px-5 py-3 rounded-r-md">
+                <svg
+                  className="mx-auto w-4"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="#FFFFFF"
+                  class="w-6 h-6"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M4.5 12.75l6 6 9-13.5"
+                  />
+                </svg>
+              </button>
+            </form>
+            <p className="text-white text-sm pt-10 ">
+              {" "}
+              We don’t send spam. Actually, who are we kiding, we’ll spam the
+              shit out of your inbox
+            </p>
+          </div>
+          <div className="col-span-2 hidden md:block"></div>
+        </div>
+      </section>
     </div>
   );
 }
@@ -257,7 +307,7 @@ const CARD2 = [
   {
     icon: (
       <svg
-        className="w-[42.77px] h-[42.77px] mx-auto "
+        className="w-[42.77px] h-[42.77px]  "
         xmlns="http://www.w3.org/2000/svg"
         fill="none"
         viewBox="0 0 24 24"
@@ -283,7 +333,7 @@ const CARD2 = [
   {
     icon: (
       <svg
-        className="w-[42.77px] h-[42.77px] mx-auto"
+        className="w-[42.77px] h-[42.77px] "
         xmlns="http://www.w3.org/2000/svg"
         fill="none"
         viewBox="0 0 24 24"
@@ -327,7 +377,7 @@ const CARD2 = [
     ),
     icon: (
       <svg
-        className="w-[42.77px] h-[42.77px] mx-auto"
+        className="w-[42.77px] h-[42.77px]"
         xmlns="http://www.w3.org/2000/svg"
         fill="none"
         viewBox="0 0 24 24"
@@ -353,7 +403,7 @@ const CARD2 = [
   {
     icon: (
       <svg
-        className="w-[42.77px] h-[42.77px] mx-auto"
+        className="w-[42.77px] h-[42.77px]"
         xmlns="http://www.w3.org/2000/svg"
         fill="none"
         viewBox="0 0 24 24"
@@ -375,5 +425,32 @@ const CARD2 = [
     description:
       "Raw denim health goth artisan, kitsch literally shabby chic meh small batch Wes Anderson retro Neutra. Blog meggings semiotics, irony swag cred kale chips aesthetic",
     href: "#",
+  },
+];
+
+const CARD3 = [
+  {
+    title: "Resources",
+    text1: "Tour",
+    text2: "Customers",
+    text3: "Pricing and Plans",
+    text4: "New Features",
+    text5: "Education",
+  },
+  {
+    title: "Resources",
+    text1: "Tour",
+    text2: "Customers",
+    text3: "Pricing and Plans",
+    text4: "New Features",
+    text5: "Education",
+  },
+  {
+    title: "Resources",
+    text1: "Tour",
+    text2: "Customers",
+    text3: "Pricing and Plans",
+    text4: "New Features",
+    text5: "Education",
   },
 ];
