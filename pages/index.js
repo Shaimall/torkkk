@@ -1,5 +1,9 @@
 import React from "react";
 import { Card, Card2, Card3 } from "../components/card";
+import { MagnifyingGlassIcon } from "@heroicons/react/24/outline";
+import Clock from "../components/clock";
+import Slider from "../components/Slider";
+import FollowAlongLinks from "../components/FollowAlongLinks";
 
 export default function Home() {
   return (
@@ -12,6 +16,19 @@ export default function Home() {
 
         <div className="absolute left-10 flex flex-shrink mt-9">
           <img className="w-full h-20 sm:h-32" src="img/logo.svg" alt="" />
+        </div>
+        <div className="flex absolute right-10 top-24 gap-7">
+          <form className="  " action="search">
+            <input
+              className="bg-slate-400 placeholder:text-white text-white rounded-3xl p-1.5  pl-2 pr-7"
+              type="text"
+              placeholder="Search Website"
+            />
+            <MagnifyingGlassIcon className="w-5 h-5 absolute top-2 right-44 text-gray-500" />
+          </form>
+          <button className="bg-[#835FA8] px-11 text-white   rounded-3xl text-sm">
+            Buy $21
+          </button>
         </div>
       </header>
 
@@ -106,7 +123,7 @@ export default function Home() {
         <div className="col-span-6  container lg:px-20 lg:py-20 px-7 py-24 ">
           <div className="inline-flex ">
             <svg
-              className=" md:h-[67px] w-14 h-8 md:w-32 2xl:h-28"
+              className=" md:h-[67px] w-14 h-10 md:w-32 2xl:h-16"
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
               viewBox="0 0 24 24"
@@ -247,7 +264,7 @@ export default function Home() {
             {" "}
             <p className="text-sm text-white "> Stay in touch</p>
             <form className="inline-flex pt-4" action="" method="post">
-              <input type="text" />
+              <input className="rounded-l-xl" type="text" />
               <button className="bg-[#835FA8] container px-5 py-3 rounded-r-md">
                 <svg
                   className="mx-auto w-4"
@@ -274,6 +291,14 @@ export default function Home() {
           </div>
           <div className="col-span-2 hidden md:block"></div>
         </div>
+      </section>
+      <section className="bg-orange-500 min-h-screen">
+        <div className="mx-auto container pt-10">
+          <div className="border-2 border-black rounded-full h-96 w-96 mx-auto"></div>
+        </div>
+        <Clock />
+        <Slider />
+        <FollowAlongLinks />
       </section>
     </div>
   );

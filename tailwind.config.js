@@ -13,7 +13,7 @@ module.exports = {
         openl: ["OpenSans-Light", "sans-serif"],
       },
 
-      plugins: [],
+      plugins: [require("@tailwindcss/forms")],
     },
   },
 };

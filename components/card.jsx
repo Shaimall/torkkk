@@ -20,7 +20,7 @@ export const Card2 = ({ title, description, num, icon }) => {
   return (
     <div className="md:flex  md:text-left p-4 py-12 ">
       <div className="flex-row">
-        <div className="md:flex">
+        <div className="">
           {icon}
           <p className="text-2xl">{num}</p>
           <p className="text-2xl text-white ">{title}</p>
